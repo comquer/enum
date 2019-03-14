@@ -1,2 +1,2 @@
-# FatCode/Enum
+# Enum
 Enumeration library for connoisseurs.
