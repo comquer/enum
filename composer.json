@@ -1,0 +1,31 @@
+{
+  "name": "fatcode/enum",
+  "description": "Enumeration library for connoisseurs.",
+  "keywords": [
+    "enum",
+    "php"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dawid <krac> Kraczkowski",
+      "email": "dawid.kraczkowski@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "FatCode\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FatCode\\Tests\\": "tests/"
+    }
+  }
+}

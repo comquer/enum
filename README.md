@@ -1,2 +1,2 @@
-# enum
-Blazing fast enumeration library
+# FatCode/Enum
+Enumeration library for connoisseurs.
