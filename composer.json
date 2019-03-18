@@ -1,6 +1,7 @@
 {
   "name": "fatcode/enum",
   "description": "Enumeration library for connoisseurs.",
+  "version": "dev-master",
   "keywords": [
     "enum",
     "php"
