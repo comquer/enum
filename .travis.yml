@@ -4,7 +4,7 @@ sudo: true
 
 env:
   global:
-    - CC_TEST_REPORTER_ID=06e760639839ebb404cc782646f5867ac7da7ce0e0e914978f6988812415f0d3
+    - CC_TEST_REPORTER_ID=b6d7b87f549d737b66407eaefcad8cf8d57a5532c3520016ed2e9f20f9ad1bfa
 
 php:
   - 7.2
