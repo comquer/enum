@@ -2,22 +2,29 @@ language: php
 
 sudo: true
 
+env:
+  global:
+    - CC_TEST_REPORTER_ID=06e760639839ebb404cc782646f5867ac7da7ce0e0e914978f6988812415f0d3
+
 php:
   - 7.2
   - 7.3
 
 before_install:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
   - composer self-update
 
 install:
-  - composer update
+  - composer install --no-interaction --no-progress --no-suggest
 
 script:
-  - vendor/bin/phpunit
+  - vendor/bin/phpunit --coverage-clover=clover.xml
+  - vendor/bin/phpcs --standard=PSR12 --warning-severity=0 src
 
 after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 cache:
   directories:
