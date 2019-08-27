@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace FatCode\Tests\Fixtures;
+namespace Comquer\Enum\Tests\Fixtures;
 
-use FatCode\Enum;
+use Comquer\Enum\Enum;
 
 /**
  * @method static EnumFixture VALID

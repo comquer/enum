@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace FatCode\Tests;
+namespace Comquer\Enum\Tests;
 
-use FatCode\Exception\EnumException;
+use Comquer\Enum\EnumException;
 use PHPUnit\Framework\TestCase;
-use FatCode\Tests\Fixtures\EnumFixture;
+use Comquer\Enum\Tests\Fixtures\EnumFixture;
 
 final class EnumTest extends TestCase
 {
