@@ -1,6 +1,6 @@
 {
-  "name": "fatcode/enum",
-  "description": "Enumeration library for connoisseurs.",
+  "name": "comquer/enum",
+  "description": "Enumeration library",
   "keywords": [
     "enum",
     "php"
@@ -10,6 +10,10 @@
     {
       "name": "Dawid <krac> Kraczkowski",
       "email": "dawid.kraczkowski@gmail.com"
+    },
+    {
+      "name": "Jakub Giminski",
+      "email": "jakub@gigabyte.software"
     }
   ],
   "require": {
@@ -26,12 +30,12 @@
   },
   "autoload": {
     "psr-4": {
-      "FatCode\\": "src/"
+      "Comquer\\Enum": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "FatCode\\Tests\\": "tests/"
+      "Comquer\\EnumTest\\": "tests/"
     }
   }
 }
