@@ -2,13 +2,13 @@
 Enumeration library for connoisseurs.
 
 ## Installation
-`composer install fatcode/enum`
+`composer install comquer/enum`
 
 ## Enum declaration
 ```php
 <?php
 
-use  FatCode\Enum;
+use  Comquer\Enum\Enum;
 
 class Colors extends Enum
 {
