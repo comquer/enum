@@ -1,16 +1,21 @@
 <?php declare(strict_types=1);
 
-namespace FatCode;
+namespace Comquer\Enum;
 
-use FatCode\Exception\EnumException;
 use ReflectionClass;
 
 abstract class Enum
 {
+    /** @var mixed */
     private $value;
+
+    /** @var string */
     private $key;
 
+    /** @var array */
     private static $constants = [];
+
+    /** @var array */
     private static $enums = [];
 
     protected function __construct(string $key, $value)
